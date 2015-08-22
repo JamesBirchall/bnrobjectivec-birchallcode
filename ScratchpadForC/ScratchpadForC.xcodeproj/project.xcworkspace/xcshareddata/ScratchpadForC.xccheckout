@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>76AE63EF-CBF2-4453-B4DD-700DB1176398</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>ScratchpadForC</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CE94BC8FEC6A766FFC81E97022E01493BEBC7B0D</key>
 		<string>https://github.com/JamesBirchall/bnrobjectivec-birchallcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ScratchpadForC/ScratchpadForC.xcodeproj/project.xcworkspace</string>
+	<string>ScratchpadForC/ScratchpadForC.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CE94BC8FEC6A766FFC81E97022E01493BEBC7B0D</key>
