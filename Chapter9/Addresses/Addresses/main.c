@@ -29,13 +29,17 @@ int main(int argc, const char * argv[]) {
     printf("An int is %zu bytes.\n", sizeof(int));
     printf("An pointer is %zu bytes.\n", sizeof(int *));
     
-    // proof in the next 2 that different types use same pointer sizes (8 bytes = 8x8 = 64 bit addresses)
+    // proof in the next 2 that different types use same pointer sizes (8 bytes = 8x8 = 64 bit addresses, 8^8 combinations of values)
     printf("An pointer is %zu bytes.\n", sizeof(float *));
     
     printf("Size of addressOfI is %zu.\n", sizeof(addressOfI));
     
     // Use NULL with pointers on setup, then check for NULL before using else
     // could break the program
+    
+    // short is 2 bytes = 8 ^ 2 = 16 bits = 65535 unsigned (including zero )
+    // divide by 2 = -32768 as smallest signed value?
+    printf("Size of unsigned short = %zu\n", sizeof(unsigned short));
     
     return 0;
 }

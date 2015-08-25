@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4D3991F8-27C4-4406-97DE-87B04C6953E5</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Addresses</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CE94BC8FEC6A766FFC81E97022E01493BEBC7B0D</key>
 		<string>https://github.com/JamesBirchall/bnrobjectivec-birchallcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Chapter9/Addresses/Addresses.xcodeproj/project.xcworkspace</string>
+	<string>Chapter9/Addresses/Addresses.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CE94BC8FEC6A766FFC81E97022E01493BEBC7B0D</key>
