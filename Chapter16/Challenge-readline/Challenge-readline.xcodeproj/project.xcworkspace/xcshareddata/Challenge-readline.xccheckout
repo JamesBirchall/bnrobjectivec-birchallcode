@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>15C4DBBA-35EA-49B7-9EDE-E8CF73F0CFCB</string>
+	<string>C70F21E9-6C05-4DF4-8B77-36E9F0BFDC7B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>TimesTwo</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CE94BC8FEC6A766FFC81E97022E01493BEBC7B0D</key>
 		<string>https://github.com/JamesBirchall/bnrobjectivec-birchallcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Chapter15/TimesTwo/TimesTwo.xcodeproj</string>
+	<string>Chapter16/Challenge-readline/Challenge-readline.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CE94BC8FEC6A766FFC81E97022E01493BEBC7B0D</key>
