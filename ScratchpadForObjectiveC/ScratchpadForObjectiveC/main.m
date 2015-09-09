@@ -40,6 +40,19 @@ int main(int argc, const char * argv[]) {
         if ([lament4 isEqualToString:[lament3 lowercaseString]]) {
             NSLog(@"Equal when lower cased.\n");
         }
+        
+        // Create string
+        NSString *longString = @"This string is awesome!\n";
+        
+        NSString *partString = @"awesome";
+        
+        NSRange foundRange = [longString rangeOfString:partString];
+        
+        NSString *foundWordWas = [longString substringWithRange:foundRange];
+        
+        NSLog(@"The found word was: %@\n", foundWordWas);
+        
+        
     }
     return 0;
 }
