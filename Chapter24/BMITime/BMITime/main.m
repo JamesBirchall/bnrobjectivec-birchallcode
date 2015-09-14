@@ -15,6 +15,8 @@ int main(int argc, const char * argv[]) {
 
         NSMutableArray *employees = [NSMutableArray array];
         
+        NSMutableDictionary *executives = [[NSMutableDictionary alloc] init];
+        
         for (int i = 0; i < 10; i++) {
             JABEmployee *jim = [[JABEmployee alloc] init];
             
@@ -23,9 +25,16 @@ int main(int argc, const char * argv[]) {
             jim.employeeID = i;
             
             [employees addObject:jim];
+            
+            if (i == 0) {
+                [executives setObject:jim forKey:@"CEO"];
+            }
+            if (i == 1) {
+                [executives setObject:jim forKey:@"CTO"];
+            }
         }
         
-        NSMutableArray *allAssets = [[NSMutableArray alloc] init];
+        //__weak NSMutableArray *allAssets = [[NSMutableArray alloc] init];
         
         // Create 10 assets
         for (int i = 0; i < 10; i++) {
@@ -41,8 +50,17 @@ int main(int argc, const char * argv[]) {
             JABEmployee *randomEmployee = [employees objectAtIndex:randomIndex];
             
             [randomEmployee addAssets:asset];
-            [allAssets addObject:asset];
+            
+            //[allAssets addObject:asset];
         }
+        
+        // Sort descriptors contain either a method or instance var/property value with which to sort on
+        // Sort Descriptors allow sorted of objects in a Mutable array only
+        //NSSortDescriptor *sortOnValueOfAssets = [NSSortDescriptor sortDescriptorWithKey:@"valueOfAssets" ascending:YES];
+        //NSSortDescriptor *sortOnEmployeeID = [NSSortDescriptor sortDescriptorWithKey:@"employeeID" ascending:YES];
+        
+        //[employees sortUsingDescriptors:@[sortOnValueOfAssets, sortOnEmployeeID]];
+        
         
         for(JABEmployee *employ in employees){
             for(JABAsset *asset in [employ assets]){
@@ -56,9 +74,17 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"Employees: %@.\n", employees);
         
+        
+        // Predicates allow you to filter a collections object to a subset of objects
+        //NSPredicate *predicate = [NSPredicate predicateWithFormat:@"valueOfAssets > 400"];
+        
+        //NSArray *filteredEmployees = [employees filteredArrayUsingPredicate:predicate];
+        
+        //NSLog(@"High value employees: %@.\n", filteredEmployees);
+        
         //NSLog(@"Giving up ownership of one employee.\n");
     
-        NSLog(@"All Assets: %@.\n", allAssets);
+        //NSLog(@"All Assets: %@.\n", allAssets);
         
         NSLog(@"Employees %lu", [employees count]);
         
@@ -67,12 +93,20 @@ int main(int argc, const char * argv[]) {
             sleep(2);
         }
     
-    
         //NSLog(@"Giving up ownership of arrays.\n");
         
         //employees = nil;
+        
+        NSLog(@"Executives: %@.\n", executives);
+        
+        //NSLog(@"The CEO is: %@.\n", [executives objectForKey:@"CEO"]);
+        NSLog(@"The CEO is: %@.\n", executives[@"CEO"]);
+        
+        //[executives setObject:[NSNull null] forKey:@"NULL"];
+        
+        NSLog(@"Null is %@.\n", executives[@"NULL"]);
     
-        allAssets = nil;
+        //allAssets = nil;
         employees = nil;
         //sleep(30);
     
