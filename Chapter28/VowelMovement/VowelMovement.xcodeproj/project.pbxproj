@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AFB616C1BA0C467002C5FE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB616B1BA0C467002C5FE0 /* main.m */; };
-		1AFB61741BA0C48C002C5FE0 /* JABPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB61731BA0C48C002C5FE0 /* JABPerson.m */; };
-		1AFB618D1BA1FEEF002C5FE0 /* JABEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB618C1BA1FEEF002C5FE0 /* JABEmployee.m */; };
-		1AFB61931BA2135D002C5FE0 /* JABAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB61921BA2135D002C5FE0 /* JABAsset.m */; };
+		1A2BF7CF1BB3F6D200B7B847 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2BF7CE1BB3F6D200B7B847 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1AFB61661BA0C467002C5FE0 /* CopyFiles */ = {
+		1A2BF7C91BB3F6D100B7B847 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,18 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1AFB61681BA0C467002C5FE0 /* BMITime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BMITime; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AFB616B1BA0C467002C5FE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1AFB61721BA0C48C002C5FE0 /* JABPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JABPerson.h; sourceTree = "<group>"; };
-		1AFB61731BA0C48C002C5FE0 /* JABPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JABPerson.m; sourceTree = "<group>"; };
-		1AFB618B1BA1FEEF002C5FE0 /* JABEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JABEmployee.h; sourceTree = "<group>"; };
-		1AFB618C1BA1FEEF002C5FE0 /* JABEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JABEmployee.m; sourceTree = "<group>"; };
-		1AFB61911BA2135D002C5FE0 /* JABAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JABAsset.h; sourceTree = "<group>"; };
-		1AFB61921BA2135D002C5FE0 /* JABAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JABAsset.m; sourceTree = "<group>"; };
+		1A2BF7CB1BB3F6D200B7B847 /* VowelMovement */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VowelMovement; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2BF7CE1BB3F6D200B7B847 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1AFB61651BA0C467002C5FE0 /* Frameworks */ = {
+		1A2BF7C81BB3F6D100B7B847 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,103 +38,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AFB615F1BA0C467002C5FE0 = {
+		1A2BF7C21BB3F6D100B7B847 = {
 			isa = PBXGroup;
 			children = (
-				1AFB616A1BA0C467002C5FE0 /* BMITime */,
-				1AFB61691BA0C467002C5FE0 /* Products */,
+				1A2BF7CD1BB3F6D200B7B847 /* VowelMovement */,
+				1A2BF7CC1BB3F6D200B7B847 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1AFB61691BA0C467002C5FE0 /* Products */ = {
+		1A2BF7CC1BB3F6D200B7B847 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1AFB61681BA0C467002C5FE0 /* BMITime */,
+				1A2BF7CB1BB3F6D200B7B847 /* VowelMovement */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1AFB616A1BA0C467002C5FE0 /* BMITime */ = {
+		1A2BF7CD1BB3F6D200B7B847 /* VowelMovement */ = {
 			isa = PBXGroup;
 			children = (
-				1AFB616B1BA0C467002C5FE0 /* main.m */,
-				1AFB61911BA2135D002C5FE0 /* JABAsset.h */,
-				1AFB61921BA2135D002C5FE0 /* JABAsset.m */,
-				1AFB618B1BA1FEEF002C5FE0 /* JABEmployee.h */,
-				1AFB618C1BA1FEEF002C5FE0 /* JABEmployee.m */,
-				1AFB61721BA0C48C002C5FE0 /* JABPerson.h */,
-				1AFB61731BA0C48C002C5FE0 /* JABPerson.m */,
+				1A2BF7CE1BB3F6D200B7B847 /* main.m */,
 			);
-			path = BMITime;
+			path = VowelMovement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1AFB61671BA0C467002C5FE0 /* BMITime */ = {
+		1A2BF7CA1BB3F6D100B7B847 /* VowelMovement */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AFB616F1BA0C467002C5FE0 /* Build configuration list for PBXNativeTarget "BMITime" */;
+			buildConfigurationList = 1A2BF7D21BB3F6D200B7B847 /* Build configuration list for PBXNativeTarget "VowelMovement" */;
 			buildPhases = (
-				1AFB61641BA0C467002C5FE0 /* Sources */,
-				1AFB61651BA0C467002C5FE0 /* Frameworks */,
-				1AFB61661BA0C467002C5FE0 /* CopyFiles */,
+				1A2BF7C71BB3F6D100B7B847 /* Sources */,
+				1A2BF7C81BB3F6D100B7B847 /* Frameworks */,
+				1A2BF7C91BB3F6D100B7B847 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BMITime;
-			productName = BMITime;
-			productReference = 1AFB61681BA0C467002C5FE0 /* BMITime */;
+			name = VowelMovement;
+			productName = VowelMovement;
+			productReference = 1A2BF7CB1BB3F6D200B7B847 /* VowelMovement */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1AFB61601BA0C467002C5FE0 /* Project object */ = {
+		1A2BF7C31BB3F6D100B7B847 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "James Birchall";
 				TargetAttributes = {
-					1AFB61671BA0C467002C5FE0 = {
-						CreatedOnToolsVersion = 6.4;
+					1A2BF7CA1BB3F6D100B7B847 = {
+						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
-			buildConfigurationList = 1AFB61631BA0C467002C5FE0 /* Build configuration list for PBXProject "BMITime" */;
+			buildConfigurationList = 1A2BF7C61BB3F6D100B7B847 /* Build configuration list for PBXProject "VowelMovement" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 1AFB615F1BA0C467002C5FE0;
-			productRefGroup = 1AFB61691BA0C467002C5FE0 /* Products */;
+			mainGroup = 1A2BF7C21BB3F6D100B7B847;
+			productRefGroup = 1A2BF7CC1BB3F6D200B7B847 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1AFB61671BA0C467002C5FE0 /* BMITime */,
+				1A2BF7CA1BB3F6D100B7B847 /* VowelMovement */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1AFB61641BA0C467002C5FE0 /* Sources */ = {
+		1A2BF7C71BB3F6D100B7B847 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AFB618D1BA1FEEF002C5FE0 /* JABEmployee.m in Sources */,
-				1AFB61741BA0C48C002C5FE0 /* JABPerson.m in Sources */,
-				1AFB61931BA2135D002C5FE0 /* JABAsset.m in Sources */,
-				1AFB616C1BA0C467002C5FE0 /* main.m in Sources */,
+				1A2BF7CF1BB3F6D200B7B847 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1AFB616D1BA0C467002C5FE0 /* Debug */ = {
+		1A2BF7D01BB3F6D200B7B847 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -172,7 +154,6 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -186,7 +167,7 @@
 			};
 			name = Debug;
 		};
-		1AFB616E1BA0C467002C5FE0 /* Release */ = {
+		1A2BF7D11BB3F6D200B7B847 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -221,14 +202,14 @@
 			};
 			name = Release;
 		};
-		1AFB61701BA0C467002C5FE0 /* Debug */ = {
+		1A2BF7D31BB3F6D200B7B847 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		1AFB61711BA0C467002C5FE0 /* Release */ = {
+		1A2BF7D41BB3F6D200B7B847 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -238,25 +219,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1AFB61631BA0C467002C5FE0 /* Build configuration list for PBXProject "BMITime" */ = {
+		1A2BF7C61BB3F6D100B7B847 /* Build configuration list for PBXProject "VowelMovement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AFB616D1BA0C467002C5FE0 /* Debug */,
-				1AFB616E1BA0C467002C5FE0 /* Release */,
+				1A2BF7D01BB3F6D200B7B847 /* Debug */,
+				1A2BF7D11BB3F6D200B7B847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AFB616F1BA0C467002C5FE0 /* Build configuration list for PBXNativeTarget "BMITime" */ = {
+		1A2BF7D21BB3F6D200B7B847 /* Build configuration list for PBXNativeTarget "VowelMovement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AFB61701BA0C467002C5FE0 /* Debug */,
-				1AFB61711BA0C467002C5FE0 /* Release */,
+				1A2BF7D31BB3F6D200B7B847 /* Debug */,
+				1A2BF7D41BB3F6D200B7B847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1AFB61601BA0C467002C5FE0 /* Project object */;
+	rootObject = 1A2BF7C31BB3F6D100B7B847 /* Project object */;
 }

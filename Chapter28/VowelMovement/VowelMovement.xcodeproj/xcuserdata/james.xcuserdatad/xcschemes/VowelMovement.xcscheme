@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1AFB61671BA0C467002C5FE0"
-               BuildableName = "BMITime"
-               BlueprintName = "BMITime"
-               ReferencedContainer = "container:BMITime.xcodeproj">
+               BlueprintIdentifier = "1A2BF7CA1BB3F6D100B7B847"
+               BuildableName = "VowelMovement"
+               BlueprintName = "VowelMovement"
+               ReferencedContainer = "container:VowelMovement.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1AFB61671BA0C467002C5FE0"
-            BuildableName = "BMITime"
-            BlueprintName = "BMITime"
-            ReferencedContainer = "container:BMITime.xcodeproj">
+            BlueprintIdentifier = "1A2BF7CA1BB3F6D100B7B847"
+            BuildableName = "VowelMovement"
+            BlueprintName = "VowelMovement"
+            ReferencedContainer = "container:VowelMovement.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,22 +55,17 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1AFB61671BA0C467002C5FE0"
-            BuildableName = "BMITime"
-            BlueprintName = "BMITime"
-            ReferencedContainer = "container:BMITime.xcodeproj">
+            BlueprintIdentifier = "1A2BF7CA1BB3F6D100B7B847"
+            BuildableName = "VowelMovement"
+            BlueprintName = "VowelMovement"
+            ReferencedContainer = "container:VowelMovement.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
-         <AdditionalOption
-            key = "NSZombieEnabled"
-            value = "YES"
-            isEnabled = "YES">
-         </AdditionalOption>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -79,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1AFB61671BA0C467002C5FE0"
-            BuildableName = "BMITime"
-            BlueprintName = "BMITime"
-            ReferencedContainer = "container:BMITime.xcodeproj">
+            BlueprintIdentifier = "1A2BF7CA1BB3F6D100B7B847"
+            BuildableName = "VowelMovement"
+            BlueprintName = "VowelMovement"
+            ReferencedContainer = "container:VowelMovement.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
