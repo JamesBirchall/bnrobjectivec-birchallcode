@@ -28,6 +28,8 @@
     
     [self.window setRootViewController:rvc];
     
+    [self.window setHidden:NO];
+    
     // Define the frame rectangles of the 3 UI elements (defined in header)
     // CGRectMake() creates a CGRect
     CGRect tableFrame = CGRectMake(0, 80, winFrame.size.width, winFrame.size.height - 100);
@@ -47,8 +49,11 @@
     self.taskField.placeholder = @"Type a task, tap here...";
     
     // Create and configure button
-    self.insertButton = [[UIButton alloc] initWithFrame:buttonFrame];
+    self.insertButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.insertButton.frame = buttonFrame;
     [self.insertButton setTitle:@"Insert" forState:UIControlStateNormal];
+    
+    [self.insertButton addTarget:self action:@selector(addTasks:) forControlEvents:UIControlEventTouchUpInside];
     
     // Add 3 elements to view
     [self.window addSubview:self.taskTable];
@@ -63,7 +68,7 @@
 }
 
 -(void)addTasks:(id)sender{
-    
+    NSLog(@"Pressed %@.\n", self.taskField.text);
 }
 
 @end
