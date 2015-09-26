@@ -8,6 +8,12 @@
 
 #import "AppDelegate.h"
 
+NSString *JABDocPath(){
+    NSArray *pathList = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    return [pathList[0] stringByAppendingString:@"data.td"];
+}
+
 @interface AppDelegate ()
 
 @end
@@ -15,6 +21,17 @@
 @implementation AppDelegate
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    
+    // Create out tasks array to hold the tasks
+    //self.tasks = [NSMutableArray array];
+    
+    NSArray *pList = [NSArray arrayWithContentsOfFile:JABDocPath()];
+    
+    if (pList) {
+        self.tasks = [pList mutableCopy];
+    } else {
+        self.tasks = [NSMutableArray array];
+    }
     
     // Create and configure the UIWindow instance
     // A CGRect is a struct with an origin (x,y) and a size (width, height)
@@ -39,6 +56,9 @@
     // Create and configure the UITableView instance
     self.taskTable = [[UITableView alloc] initWithFrame:tableFrame style:UITableViewStylePlain];
     self.taskTable.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    // Make this class the data source - using in turn the tasks array as the data model
+    self.taskTable.dataSource = self;
     
     // tell the table view which class to instantiate wherever it needs to create a new cell
     [self.taskTable registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
@@ -68,7 +88,53 @@
 }
 
 -(void)addTasks:(id)sender{
-    NSLog(@"Pressed %@.\n", self.taskField.text);
+    
+    NSString *text = [self.taskField text];
+    
+    if ([text length] == 0) {
+        return; // no input yet
+    }
+    
+    //NSLog(@"Text entered %@.\n", text);
+    
+    // Add text to tasks array - our data source for the taskTable
+    [self.tasks addObject:text];
+    
+    for(NSString *s in self.tasks){
+        NSLog(@"%@\n", s);
+    }
+    
+    // signify a reload of the data source for task table
+    [self.taskTable reloadData];
+    
+    // Clear out text field
+    [self.taskField setText:@""];
+    
+    // Dismiss the keyboard
+    [self.taskField resignFirstResponder];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    // returns number of rows which is equal to the number of objects in our tasks array
+    
+    return [self.tasks count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    // create object to return
+    UITableViewCell *c = [self.taskTable dequeueReusableCellWithIdentifier:@"Cell"];
+    
+    //c.textLabel.text = [self.tasks objectAtIndex:indexPath.row];
+    
+    NSString *item = [self.tasks objectAtIndex:indexPath.row];
+    c.textLabel.text = item;
+    
+    return c;
+}
+
+-(void)applicationDidEnterBackground:(UIApplication *)application{
+    [self.tasks writeToFile:JABDocPath() atomically:YES];
 }
 
 @end
